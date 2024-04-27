@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Test jQuery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    
+   /* $("button").click(function(){
+        console.log("button Clicked")
+    })*/
+
+    $("#btn1").click(()=>{
+        $("h1").html("Welcome to event").css({"background-color":"lightgrey","color":"grey"})
+    })
+
+   });
+
+   </script>
+</head>
+<body>
+   <h1>Welcome To jQuery</h1>
+   
+   <p >This is para-0</p>
+   <div>
+	<p >This is para-1</p>
+	<p ><span>This is para-2</span></p>
+	<p >This is para-3</p>
+	<p >This is para-4</p>
+	</div>
+	<div>
+    <button id="btn1">Click Here</button>
+	<!-- <p >This is para-5</p>
+	<p >This is para-6</p>
+	<p >This is para-7</p>
+	</div>
+	<p >This is para-8</p> -->
+	
+</body>
+</html>

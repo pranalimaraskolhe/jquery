@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        //event handling
+        $(document).ready(()=>{
+            $(":submit").click(()=>{
+                var un = $("#uname").val()
+                var pass = $("#passwd").val()
+                $("#s1").html("<b>Welcome</b> " + un + "Your password is " + pass)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <b>Username</b><br>
+    <input type="text" placeholder="Enter username" id="uname" size="30"><br>
+    <b>Password</b><br>
+    <input type="password" placeholder="Enter Password" id="passwd" size="30"><br>
+
+    <input type="submit"><br>
+    <span id="s1"></span>
+
+</body>
+
+</html>
